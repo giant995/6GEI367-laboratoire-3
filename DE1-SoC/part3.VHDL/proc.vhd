@@ -178,15 +178,11 @@ BEGIN
                         -- ... your code goes here //////////////////////////////// AJOUTER
                     WHEN ld =>
                         null;   -- wait cycle for synchronous memory
-                    WHEN st =>
-                        -- ... your code goes here
-								--if IMM='0' then
-									--Sel <= '0' & rY;
-								--else
-								--	Sel <= Sel_D;
-								--	end if;
-								--	ADDRin <= '1';
-								--	W_D <= '1';
+                    WHEN st =>	
+									DOUTin <= '1';
+									Sel <= '0' & rX;
+									W_D <= '1';
+									Done <= '1';
                     WHEN OTHERS =>
                         null;
                 END CASE;
@@ -204,9 +200,9 @@ BEGIN
 								Sel <= Sel_DIN;
 								Done <= '1';
 								
-                    WHEN st =>      -- wait cycle for synchronous memory ?????????????????
-                        -- ... your code goes here
-								--Done <= '1';
+                    WHEN st =>      -- wait cycle for synchronous memory 
+                        null;
+								
                     WHEN OTHERS =>
                         null;
                 END CASE;

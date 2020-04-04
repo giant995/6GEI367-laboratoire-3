@@ -10,21 +10,21 @@
 # Copying D:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/part3.vhd}
+# vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:03:52 on Apr 01,2020
-# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/part3.vhd 
+# Start time: 17:56:28 on Apr 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity part3
 # -- Compiling architecture Behavior of part3
-# End time: 14:03:53 on Apr 01,2020, Elapsed time: 0:00:01
+# End time: 17:56:29 on Apr 04,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd}
+# vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:03:53 on Apr 01,2020
-# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd 
+# Start time: 17:56:29 on Apr 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -38,33 +38,33 @@
 # -- Compiling architecture Behavior of dec3to8
 # -- Compiling entity regn
 # -- Compiling architecture Behavior of regn
-# End time: 14:03:53 on Apr 01,2020, Elapsed time: 0:00:00
+# End time: 17:56:29 on Apr 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/flipflop.vhd}
+# vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:03:53 on Apr 01,2020
-# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/flipflop.vhd 
+# Start time: 17:56:29 on Apr 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity flipflop
 # -- Compiling architecture Behavior of flipflop
-# End time: 14:03:53 on Apr 01,2020, Elapsed time: 0:00:00
+# End time: 17:56:29 on Apr 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd}
+# vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:03:53 on Apr 01,2020
-# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd 
+# Start time: 17:56:29 on Apr 04,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_mf_components
 # -- Compiling entity inst_mem
 # -- Compiling architecture SYN of inst_mem
-# End time: 14:03:53 on Apr 01,2020, Elapsed time: 0:00:00
+# End time: 17:56:30 on Apr 04,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# do "C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/ModelSim/testbench.tcl"
+# do "C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/ModelSim/testbench.tcl"
 # stop any simulation that is currently running
 # quit -sim
 # 
@@ -86,19 +86,19 @@
 # compile the VHDL source code in the parent folder
 # vcom {C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\part3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:03:54 on Apr 01,2020
+# Start time: 17:56:30 on Apr 04,2020
 # vcom -reportprogress 300 C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\part3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity part3
 # -- Compiling architecture Behavior of part3
-# End time: 14:03:54 on Apr 01,2020, Elapsed time: 0:00:00
+# End time: 17:56:30 on Apr 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # compile the VHDL code of the testbench
 # vcom {C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:03:54 on Apr 01,2020
+# Start time: 17:56:30 on Apr 04,2020
 # vcom -reportprogress 300 C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -107,12 +107,12 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity testbench
 # -- Compiling architecture Behavior of testbench
-# End time: 14:03:54 on Apr 01,2020, Elapsed time: 0:00:00
+# End time: 17:56:30 on Apr 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # start the Simulator, including some libraries that may be needed
 # vsim work.testbench -Lf 220model -Lf altera_mf
 # vsim work.testbench -Lf 220model -Lf altera_mf 
-# Start time: 14:03:55 on Apr 01,2020
+# Start time: 17:56:31 on Apr 04,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -234,6 +234,8 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 290 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 330 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 350 ns  Iteration: 4  Instance: /testbench/U1/U3
@@ -243,6 +245,8 @@
 #    Time: 390 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 390 ns  Iteration: 5  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 410 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 430 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -270,6 +274,8 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 610 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 650 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 670 ns  Iteration: 4  Instance: /testbench/U1/U3
@@ -279,6 +285,8 @@
 #    Time: 710 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 710 ns  Iteration: 5  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 730 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 750 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -306,6 +314,8 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 930 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 970 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 990 ns  Iteration: 4  Instance: /testbench/U1/U3
@@ -315,6 +325,8 @@
 #    Time: 1030 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1030 ns  Iteration: 5  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1050 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1070 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -342,6 +354,8 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1250 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1290 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1310 ns  Iteration: 4  Instance: /testbench/U1/U3
@@ -351,6 +365,8 @@
 #    Time: 1350 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1350 ns  Iteration: 5  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1370 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1390 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -378,6 +394,8 @@
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1570 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1610 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1630 ns  Iteration: 4  Instance: /testbench/U1/U3
@@ -387,6 +405,8 @@
 #    Time: 1670 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1670 ns  Iteration: 5  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1690 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1710 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -401,5 +421,5 @@
 #    Time: 1790 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1790 ns  Iteration: 5  Instance: /testbench/U1/U3
-# End time: 14:05:53 on Apr 01,2020, Elapsed time: 0:01:58
-# Errors: 0, Warnings: 115
+# End time: 17:57:42 on Apr 04,2020, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 125

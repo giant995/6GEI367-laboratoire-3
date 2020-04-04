@@ -1,5 +1,5 @@
 Analysis & Synthesis report for part3
-Wed Apr 01 14:24:35 2020
+Sat Apr 04 17:53:32 2020
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Apr 01 14:24:35 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sat Apr 04 17:53:32 2020       ;
 ; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; part3                                       ;
 ; Top-level Entity Name           ; part3                                       ;
@@ -189,27 +189,27 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                    ; Library ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; part3.vhd                        ; yes             ; User VHDL File                         ; C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/part3.vhd              ;         ;
-; proc.vhd                         ; yes             ; User VHDL File                         ; C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd               ;         ;
-; flipflop.vhd                     ; yes             ; Auto-Found VHDL File                   ; C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/flipflop.vhd           ;         ;
-; inst_mem.vhd                     ; yes             ; Auto-Found Wizard-Generated File       ; C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd           ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf                                ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/stratix_ram_block.inc                         ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.inc                                   ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_decode.inc                                ;         ;
-; aglobal161.inc                   ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc                                ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_rdenreg.inc                                 ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/altrom.inc                                    ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/altram.inc                                    ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/altdpram.inc                                  ;         ;
-; db/altsyncram_pf24.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/db/altsyncram_pf24.tdf ;         ;
-; inst_mem.mif                     ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.mif           ;         ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                  ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                    ; Library ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------+---------+
+; part3.vhd                        ; yes             ; User VHDL File                         ; C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd              ;         ;
+; proc.vhd                         ; yes             ; User VHDL File                         ; C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd               ;         ;
+; flipflop.vhd                     ; yes             ; Auto-Found VHDL File                   ; C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd           ;         ;
+; inst_mem.vhd                     ; yes             ; Auto-Found Wizard-Generated File       ; C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd           ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf                ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/stratix_ram_block.inc         ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.inc                   ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_decode.inc                ;         ;
+; aglobal161.inc                   ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc                ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_rdenreg.inc                 ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/altrom.inc                    ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/altram.inc                    ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/altdpram.inc                  ;         ;
+; db/altsyncram_pf24.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/db/altsyncram_pf24.tdf ;         ;
+; inst_mem.mif                     ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.mif           ;         ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -217,14 +217,14 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 151            ;
+; Estimate of Logic utilization (ALMs needed) ; 152            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 156            ;
+; Combinational ALUT usage for logic          ; 159            ;
 ;     -- 7 input functions                    ; 1              ;
-;     -- 6 input functions                    ; 63             ;
-;     -- 5 input functions                    ; 31             ;
-;     -- 4 input functions                    ; 27             ;
-;     -- <=3 input functions                  ; 34             ;
+;     -- 6 input functions                    ; 72             ;
+;     -- 5 input functions                    ; 23             ;
+;     -- 4 input functions                    ; 23             ;
+;     -- <=3 input functions                  ; 40             ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 231            ;
 ;                                             ;                ;
@@ -236,7 +236,7 @@ agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 247            ;
-; Total fan-out                               ; 1683           ;
+; Total fan-out                               ; 1697           ;
 ; Average fan-out                             ; 3.77           ;
 +---------------------------------------------+----------------+
 
@@ -246,15 +246,15 @@ agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+-----------------+--------------+
-; |part3                                    ; 156 (19)            ; 231 (0)                   ; 4096              ; 0          ; 22   ; 0            ; |part3                                                                            ; part3           ; work         ;
+; |part3                                    ; 159 (19)            ; 231 (0)                   ; 4096              ; 0          ; 22   ; 0            ; |part3                                                                            ; part3           ; work         ;
 ;    |flipflop:U1|                          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |part3|flipflop:U1                                                                ; flipflop        ; work         ;
 ;    |flipflop:U2|                          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |part3|flipflop:U2                                                                ; flipflop        ; work         ;
 ;    |inst_mem:U4|                          ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |part3|inst_mem:U4                                                                ; inst_mem        ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |part3|inst_mem:U4|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
 ;          |altsyncram_pf24:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |part3|inst_mem:U4|altsyncram:altsyncram_component|altsyncram_pf24:auto_generated ; altsyncram_pf24 ; work         ;
-;    |proc:U3|                              ; 135 (108)           ; 211 (6)                   ; 0                 ; 0          ; 0    ; 0            ; |part3|proc:U3                                                                    ; proc            ; work         ;
+;    |proc:U3|                              ; 138 (110)           ; 211 (6)                   ; 0                 ; 0          ; 0    ; 0            ; |part3|proc:U3                                                                    ; proc            ; work         ;
 ;       |dec3to8:decX|                      ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part3|proc:U3|dec3to8:decX                                                       ; dec3to8         ; work         ;
-;       |flipflop:reg_W|                    ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |part3|proc:U3|flipflop:reg_W                                                     ; flipflop        ; work         ;
+;       |flipflop:reg_W|                    ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |part3|proc:U3|flipflop:reg_W                                                     ; flipflop        ; work         ;
 ;       |pc_count:Upc|                      ; 17 (17)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |part3|proc:U3|pc_count:Upc                                                       ; pc_count        ; work         ;
 ;       |regn:reg_0|                        ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |part3|proc:U3|regn:reg_0                                                         ; regn            ; work         ;
 ;       |regn:reg_1|                        ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |part3|proc:U3|regn:reg_1                                                         ; regn            ; work         ;
@@ -304,7 +304,7 @@ Encoding Type:  One-Hot
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 231   ;
-; Number of registers using Synchronous Clear  ; 17    ;
+; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -318,11 +318,11 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |part3|proc:U3|pc_count:Upc|Count[1] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |part3|proc:U3|pc_count:Upc|Count[4] ;
 ; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; No         ; |part3|proc:U3|Mux23                 ;
-; 12:1               ; 7 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; No         ; |part3|proc:U3|Mux37                 ;
-; 12:1               ; 8 bits    ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |part3|proc:U3|Mux46                 ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; No         ; |part3|proc:U3|Selector2             ;
+; 12:1               ; 7 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; No         ; |part3|proc:U3|Mux38                 ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |part3|proc:U3|Mux47                 ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 8 LEs                ; 6 LEs                  ; No         ; |part3|proc:U3|Selector3             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 
 
@@ -583,26 +583,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 6                           ;
 ;     ENA               ; 197                         ;
 ;     ENA SCLR SLD      ; 16                          ;
-;     SCLR              ; 1                           ;
-;     plain             ; 11                          ;
-; arriav_lcell_comb     ; 156                         ;
+;     plain             ; 12                          ;
+; arriav_lcell_comb     ; 159                         ;
 ;     arith             ; 33                          ;
 ;         1 data inputs ; 16                          ;
 ;         2 data inputs ; 1                           ;
 ;         4 data inputs ; 16                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 122                         ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 14                          ;
-;         4 data inputs ; 11                          ;
-;         5 data inputs ; 31                          ;
-;         6 data inputs ; 63                          ;
+;     normal            ; 125                         ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 7                           ;
+;         5 data inputs ; 23                          ;
+;         6 data inputs ; 72                          ;
 ; boundary_port         ; 22                          ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.50                        ;
-; Average LUT depth     ; 3.91                        ;
+; Average LUT depth     ; 3.87                        ;
 +-----------------------+-----------------------------+
 
 
@@ -611,7 +610,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -621,38 +620,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Wed Apr 01 14:24:22 2020
+    Info: Processing started: Sat Apr 04 17:53:14 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part3 -c part3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file part3.vhd
-    Info (12022): Found design unit 1: part3-Behavior File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/part3.vhd Line: 13
-    Info (12023): Found entity 1: part3 File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/part3.vhd Line: 6
+    Info (12022): Found design unit 1: part3-Behavior File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd Line: 13
+    Info (12023): Found entity 1: part3 File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd Line: 6
 Info (12021): Found 8 design units, including 4 entities, in source file proc.vhd
-    Info (12022): Found design unit 1: proc-Behavior File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 13
-    Info (12022): Found design unit 2: pc_count-Behavior File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 289
-    Info (12022): Found design unit 3: dec3to8-Behavior File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 315
-    Info (12022): Found design unit 4: regn-Behavior File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 343
-    Info (12023): Found entity 1: proc File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 5
-    Info (12023): Found entity 2: pc_count File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 283
-    Info (12023): Found entity 3: dec3to8 File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 310
-    Info (12023): Found entity 4: regn File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 336
+    Info (12022): Found design unit 1: proc-Behavior File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 13
+    Info (12022): Found design unit 2: pc_count-Behavior File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 284
+    Info (12022): Found design unit 3: dec3to8-Behavior File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 310
+    Info (12022): Found design unit 4: regn-Behavior File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 338
+    Info (12023): Found entity 1: proc File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 5
+    Info (12023): Found entity 2: pc_count File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 278
+    Info (12023): Found entity 3: dec3to8 File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 305
+    Info (12023): Found entity 4: regn File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 331
 Info (12127): Elaborating entity "part3" for the top level hierarchy
 Warning (12125): Using design file flipflop.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: flipflop-Behavior File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/flipflop.vhd Line: 9
-    Info (12023): Found entity 1: flipflop File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/flipflop.vhd Line: 4
-Info (12128): Elaborating entity "flipflop" for hierarchy "flipflop:U1" File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/part3.vhd Line: 46
-Info (12128): Elaborating entity "proc" for hierarchy "proc:U3" File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/part3.vhd Line: 50
-Info (12128): Elaborating entity "dec3to8" for hierarchy "proc:U3|dec3to8:decX" File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 71
-Info (12128): Elaborating entity "regn" for hierarchy "proc:U3|regn:reg_0" File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 226
-Info (12128): Elaborating entity "pc_count" for hierarchy "proc:U3|pc_count:Upc" File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd Line: 235
+    Info (12022): Found design unit 1: flipflop-Behavior File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd Line: 9
+    Info (12023): Found entity 1: flipflop File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd Line: 4
+Info (12128): Elaborating entity "flipflop" for hierarchy "flipflop:U1" File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd Line: 46
+Info (12128): Elaborating entity "proc" for hierarchy "proc:U3" File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd Line: 50
+Info (12128): Elaborating entity "dec3to8" for hierarchy "proc:U3|dec3to8:decX" File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 71
+Info (12128): Elaborating entity "regn" for hierarchy "proc:U3|regn:reg_0" File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 221
+Info (12128): Elaborating entity "pc_count" for hierarchy "proc:U3|pc_count:Upc" File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd Line: 230
 Warning (12125): Using design file inst_mem.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: inst_mem-SYN File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd Line: 55
-    Info (12023): Found entity 1: inst_mem File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd Line: 43
-Info (12128): Elaborating entity "inst_mem" for hierarchy "inst_mem:U4" File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/part3.vhd Line: 58
-Info (12128): Elaborating entity "altsyncram" for hierarchy "inst_mem:U4|altsyncram:altsyncram_component" File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd Line: 62
-Info (12130): Elaborated megafunction instantiation "inst_mem:U4|altsyncram:altsyncram_component" File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd Line: 62
-Info (12133): Instantiated megafunction "inst_mem:U4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd Line: 62
+    Info (12022): Found design unit 1: inst_mem-SYN File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd Line: 55
+    Info (12023): Found entity 1: inst_mem File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd Line: 43
+Info (12128): Elaborating entity "inst_mem" for hierarchy "inst_mem:U4" File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd Line: 58
+Info (12128): Elaborating entity "altsyncram" for hierarchy "inst_mem:U4|altsyncram:altsyncram_component" File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd Line: 62
+Info (12130): Elaborated megafunction instantiation "inst_mem:U4|altsyncram:altsyncram_component" File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd Line: 62
+Info (12133): Instantiated megafunction "inst_mem:U4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd Line: 62
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -704,21 +703,21 @@ Info (12133): Instantiated megafunction "inst_mem:U4|altsyncram:altsyncram_compo
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_pf24.tdf
-    Info (12023): Found entity 1: altsyncram_pf24 File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/db/altsyncram_pf24.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_pf24 File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/db/altsyncram_pf24.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_pf24" for hierarchy "inst_mem:U4|altsyncram:altsyncram_component|altsyncram_pf24:auto_generated" File: d:/prgm files/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "regn" for hierarchy "regn:U5" File: C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/part3.vhd Line: 73
+Info (12128): Elaborating entity "regn" for hierarchy "regn:U5" File: C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd Line: 73
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 381 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 376 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 343 logic cells
+    Info (21061): Implemented 338 logic cells
     Info (21064): Implemented 16 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Wed Apr 01 14:24:35 2020
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Sat Apr 04 17:53:32 2020
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:28
 
 

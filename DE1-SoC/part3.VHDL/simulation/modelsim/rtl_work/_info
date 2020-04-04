@@ -7,36 +7,36 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/simulation/modelsim
+Z0 dC:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/simulation/modelsim
 Edec3to8
-Z1 w1585613057
+Z1 w1586037153
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd
-Z5 FC:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd
+Z4 8C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd
+Z5 FC:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd
 l0
-L310
-VWkVP`AfMcZHPN6VITSBEI0
-!s100 2YFN2RA2b:4`j`TP=96c31
+L305
+VMR2W97J75d@]?o?mUI^O^1
+!s100 _]aU?T=NLPCZk7;^;3bTi0
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1585764233
+Z7 !s110 1586037389
 !i10b 1
-Z8 !s108 1585764233.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd|
-Z10 !s107 C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/proc.vhd|
+Z8 !s108 1586037389.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd|
+Z10 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
 Abehavior
 R2
 R3
-DEx4 work 7 dec3to8 0 22 WkVP`AfMcZHPN6VITSBEI0
-l316
-L315
-V2D5@58X1jUm^Y[0Jl?G@>0
-!s100 42^WX6;]=SGZOf>bT?Bbz2
+DEx4 work 7 dec3to8 0 22 MR2W97J75d@]?o?mUI^O^1
+l311
+L310
+V<EHn[^<k;6DF?bjNQWU<D0
+!s100 hJW1Ki[?ZFz5MFF`53dTi0
 R6
 31
 R7
@@ -48,12 +48,12 @@ R10
 R11
 R12
 Eflipflop
-Z13 w1572536660
+Z13 w1586035781
 R2
 R3
 R0
-Z14 8C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/flipflop.vhd
-Z15 FC:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/flipflop.vhd
+Z14 8C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd
+Z15 FC:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd
 l0
 L4
 V46OBoPL=D7J2Q<k@138UD1
@@ -63,8 +63,8 @@ R6
 R7
 !i10b 1
 R8
-Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/flipflop.vhd|
-Z17 !s107 C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/flipflop.vhd|
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd|
+Z17 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd|
 !i113 1
 R11
 R12
@@ -87,29 +87,29 @@ R17
 R11
 R12
 Einst_mem
-Z18 w1585589923
-Z19 DPx9 altera_mf 20 altera_mf_components 0 22 m2K6F5NmQKkFhQa^^]15g3
+R13
+Z18 DPx9 altera_mf 20 altera_mf_components 0 22 m2K6F5NmQKkFhQa^^]15g3
 R2
 R3
 R0
-Z20 8C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd
-Z21 FC:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd
+Z19 8C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd
+Z20 FC:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd
 l0
 L43
 VIPL:4R96=Pn5mNa[gz?lk0
 !s100 dm80m;lJELzBSmn:HQ6Nz1
 R6
 31
-R7
+Z21 !s110 1586037390
 !i10b 1
 R8
-Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd|
-Z23 !s107 C:/Users/The_N/Documents/UQAC/2020/Conception Systemes Digitaux/labo3/DE1-SoC/part3.VHDL/inst_mem.vhd|
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd|
+Z23 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd|
 !i113 1
 R11
 R12
 Asyn
-R19
+R18
 R2
 R3
 DEx4 work 8 inst_mem 0 22 IPL:4R96=Pn5mNa[gz?lk0
@@ -119,7 +119,7 @@ VfTU_oRNcHO^;Wn6T[80g^1
 !s100 aHO1Tli7]@;CK=BECUf^^0
 R6
 31
-R7
+R21
 !i10b 1
 R8
 R22
@@ -140,11 +140,11 @@ Vlh4>h@GIEZ7ZgCLmD0L`92
 !s100 m_UG]^]Ik^7AFE5d:Yn]H1
 R6
 32
-Z27 !s110 1585764234
+R21
 !i10b 1
-Z28 !s108 1585764234.000000
-Z29 !s90 -reportprogress|300|C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\part3.vhd|
-Z30 !s107 C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\part3.vhd|
+Z27 !s108 1586037390.000000
+Z28 !s90 -reportprogress|300|C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\part3.vhd|
+Z29 !s107 C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\part3.vhd|
 !i113 1
 R12
 Abehavior
@@ -157,26 +157,26 @@ VJLN^<0ICzkQ:YnTNmjMG`3
 !s100 oPPJlE8kQC?BR>30ac47n1
 R6
 32
-R27
+R21
 !i10b 1
+R27
 R28
 R29
-R30
 !i113 1
 R12
 Epc_count
 R1
-Z31 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z32 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z30 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z31 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R2
 R3
 R0
 R4
 R5
 l0
-L283
-VimHfTkjfjg79LOR[9YoCT1
-!s100 QbeZ=adC2FJD=RNoM`F]43
+L278
+VPQV9:hKAYF?[zh:UUN9`z1
+!s100 UdHnDj0ocF5;m0DokdNH33
 R6
 31
 R7
@@ -188,15 +188,15 @@ R10
 R11
 R12
 Abehavior
+R30
 R31
-R32
 R2
 R3
-DEx4 work 8 pc_count 0 22 imHfTkjfjg79LOR[9YoCT1
-l291
-L289
-Vz@oZKD:LN238HlTaTi?1[2
-!s100 Re5>MK=UZ9@Efo_CXAJZT3
+DEx4 work 8 pc_count 0 22 PQV9:hKAYF?[zh:UUN9`z1
+l286
+L284
+VZ`dN?@4n?n3zQbJ`lgGe:0
+!s100 YAKn=S6[U`52mmb9ZK^Qj2
 R6
 31
 R7
@@ -209,8 +209,8 @@ R11
 R12
 Eproc
 R1
+R30
 R31
-R32
 R2
 R3
 R0
@@ -231,15 +231,15 @@ R10
 R11
 R12
 Abehavior
+R30
 R31
-R32
 R2
 R3
 DEx4 work 4 proc 0 22 eSo9`Cz3QfWCQUH^IH4oX0
 l66
 L13
-V4F7lb4b05gDVZVX`;Hmf33
-!s100 m4W1nC_aO0P`Do9@?0_lQ1
+V9dzaSKQTifL_9YPlz62;31
+!s100 ed8<z:ec5QQDAWg1HY<c72
 R6
 31
 R7
@@ -258,9 +258,9 @@ R0
 R4
 R5
 l0
-L336
-VMoLoWCXN]U]I053_7SiA=0
-!s100 @oV;ibHVeP_@o]hlSFI7X1
+L331
+VG1b1>8f^1Yk8OIEIRO@Pa0
+!s100 [BheA14FH[7FN0hm]zz]h2
 R6
 31
 R7
@@ -274,11 +274,11 @@ R12
 Abehavior
 R2
 R3
-DEx4 work 4 regn 0 22 MoLoWCXN]U]I053_7SiA=0
-l344
-L343
-V6Pm>`zXIhzO>1`F`3BM1N2
-!s100 J>z?NRo2J_<ADC:AEaJEj0
+DEx4 work 4 regn 0 22 G1b1>8f^1Yk8OIEIRO@Pa0
+l339
+L338
+VN?g91ML73_JX?L78PZkdN1
+!s100 b9fmH]51LYNGClHGngE6i2
 R6
 31
 R7
@@ -291,29 +291,29 @@ R11
 R12
 Etestbench
 R24
-R31
-Z33 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+R30
+Z32 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 R2
 R3
 R0
-Z34 8C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht
-Z35 FC:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht
+Z33 8C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht
+Z34 FC:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht
 l0
 L5
 V4HEm;e8eeXzGO9Ii`>i221
 !s100 D7:<`0Q6OimFfE2eLR4UN3
 R6
 32
-R27
+R21
 !i10b 1
-R28
-Z36 !s90 -reportprogress|300|C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht|
-Z37 !s107 C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht|
+R27
+Z35 !s90 -reportprogress|300|C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht|
+Z36 !s107 C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht|
 !i113 1
 R12
 Abehavior
-R31
-R33
+R30
+R32
 R2
 R3
 DEx4 work 9 testbench 0 22 4HEm;e8eeXzGO9Ii`>i221
@@ -323,10 +323,10 @@ V:WQ_8M@:nM_==GM]@oEUE3
 !s100 1bRhCgK:`bR[jRaV<B8k83
 R6
 32
-R27
+R21
 !i10b 1
-R28
+R27
+R35
 R36
-R37
 !i113 1
 R12
