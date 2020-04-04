@@ -175,7 +175,13 @@ BEGIN
 								Gin <= '1';	
 								
                     WHEN and_it =>
-                        -- ... your code goes here //////////////////////////////// AJOUTER
+                        -- ... your code goes here 
+								Ain <= '0';
+								IF IMM = '0' THEN Sel <= '0' & rY;  -- mv rX, rY
+                        ELSE Sel <= Sel_D;                  -- mv rX, #D
+                        END IF;
+								ALUand <= '1';
+								Gin <= '1';
                     WHEN ld =>
                         null;   -- wait cycle for synchronous memory
                     WHEN st =>	
