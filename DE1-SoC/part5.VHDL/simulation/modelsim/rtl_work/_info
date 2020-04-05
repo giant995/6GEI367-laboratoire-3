@@ -1,0 +1,449 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/simulation/modelsim
+Edec3to8
+Z1 w1586114149
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/proc.vhd
+Z5 FC:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/proc.vhd
+l0
+L378
+V;@I@IR]jEVdbF9lGdW5NN0
+!s100 di1Y>Q5_If0KKJ;bD8WZ32
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1586114201
+!i10b 1
+Z8 !s108 1586114201.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/proc.vhd|
+Z10 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/proc.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+DEx4 work 7 dec3to8 0 22 ;@I@IR]jEVdbF9lGdW5NN0
+l384
+L383
+VnH]PX7T^zGYf4kFfYiCfB2
+!s100 j[:2bK]Q[6NBF=]RDWe651
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eflipflop
+Z13 w1586035781
+R2
+R3
+R0
+Z14 8C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/flipflop.vhd
+Z15 FC:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/flipflop.vhd
+l0
+L4
+V46OBoPL=D7J2Q<k@138UD1
+!s100 elB@DkKH0kSzghMbXVdP;0
+R6
+31
+Z16 !s110 1586114202
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/flipflop.vhd|
+Z18 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/flipflop.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 8 flipflop 0 22 46OBoPL=D7J2Q<k@138UD1
+l10
+L9
+V[a9TAPQaJhfimY`:E=M<51
+!s100 fQW`jH^hf9HA>mWccLFkB1
+R6
+31
+R16
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Einst_mem
+R13
+Z19 DPx9 altera_mf 20 altera_mf_components 0 22 m2K6F5NmQKkFhQa^^]15g3
+R2
+R3
+R0
+Z20 8C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/inst_mem.vhd
+Z21 FC:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/inst_mem.vhd
+l0
+L42
+VAP?@UQbJf`g:YN1je@aJL1
+!s100 6Pk][0Ri_UHS4Z1[P]Wk23
+R6
+31
+R16
+!i10b 1
+Z22 !s108 1586114202.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/inst_mem.vhd|
+Z24 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/inst_mem.vhd|
+!i113 1
+R11
+R12
+Asyn
+R19
+R2
+R3
+DEx4 work 8 inst_mem 0 22 AP?@UQbJf`g:YN1je@aJL1
+l58
+L54
+VRO?o1OVV2Vmi3WXARFMBc0
+!s100 FOoLU1PHX4A?lTH1SbfHH2
+R6
+31
+R16
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12
+Epart3
+R13
+R2
+R3
+R0
+Z25 8C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd
+Z26 FC:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd
+l0
+L6
+Vlh4>h@GIEZ7ZgCLmD0L`92
+!s100 m_UG]^]Ik^7AFE5d:Yn]H1
+R6
+32
+R16
+!i10b 1
+R22
+Z27 !s90 -reportprogress|300|C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd|
+Z28 !s107 C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd|
+!i113 1
+R12
+Abehavior
+R2
+R3
+DEx4 work 5 part3 0 22 lh4>h@GIEZ7ZgCLmD0L`92
+l43
+L13
+VJLN^<0ICzkQ:YnTNmjMG`3
+!s100 oPPJlE8kQC?BR>30ac47n1
+R6
+32
+R16
+!i10b 1
+R22
+R27
+R28
+!i113 1
+R12
+Epart5
+R13
+R2
+R3
+R0
+Z29 8C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/part5.vhd
+Z30 FC:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/part5.vhd
+l0
+L6
+VXEenabh2km68@UXXGjlld2
+!s100 [[FHB;OSm4RAI8D[C@aGj3
+R6
+31
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/part5.vhd|
+Z32 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/part5.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 5 part5 0 22 XEenabh2km68@UXXGjlld2
+l50
+L14
+VoBn?Dke?0S_1HS63[33jl1
+!s100 9_ZYfEEgod?^N?<<2]HKE0
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Epc_count
+R1
+Z33 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z34 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+R0
+R4
+R5
+l0
+L351
+VP;dU?zUF<C2;DW^j]SL<E0
+!s100 DD3_h?i>j_k;j>n;AP0Pa1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R33
+R34
+R2
+R3
+DEx4 work 8 pc_count 0 22 P;dU?zUF<C2;DW^j]SL<E0
+l359
+L357
+VTa7YhI2g6iUWJ]U@A:Kee2
+!s100 6NN9booUY[Mi=BzQ25L3U3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eproc
+R1
+R33
+R34
+R2
+R3
+R0
+R4
+R5
+l0
+L5
+VeSo9`Cz3QfWCQUH^IH4oX0
+!s100 S0>5zZ[l6]2b?kf=W_TN:1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R33
+R34
+R2
+R3
+DEx4 work 4 proc 0 22 eSo9`Cz3QfWCQUH^IH4oX0
+l69
+L13
+VdnZ4D37NZBb1YWY0GJlnR1
+!s100 4GYFOkj<e93SkBA6?[=[Y1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eregn
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L404
+V0]Q0RzXLLma_D]D=M_=N=3
+!s100 d:z`nj@Zn;aUYn19:6z:z1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 4 regn 0 22 0]Q0RzXLLma_D]D=M_=N=3
+l412
+L411
+VnoUGm8;_8?nF[Y;@N?SR11
+!s100 WB9D>TeFiESR35Xn7Ha_K3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eregne
+Z35 w1586042216
+R2
+R3
+R0
+Z36 8C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/seg7.vhd
+Z37 FC:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/seg7.vhd
+l0
+L35
+VFE<@OkmoijDWQU]hL=9fk3
+!s100 `EJ4<YFJ^o=4ai1DGd3OD2
+R6
+31
+R16
+!i10b 1
+R22
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/seg7.vhd|
+Z39 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/seg7.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 5 regne 0 22 FE<@OkmoijDWQU]hL=9fk3
+l43
+L42
+VWMZZeNiA^PKR26lemCC6]2
+!s100 _E5zfZ]Pg]zP_9YVoDf3H2
+R6
+31
+R16
+!i10b 1
+R22
+R38
+R39
+!i113 1
+R11
+R12
+Eseg7
+R35
+R2
+R3
+R0
+R36
+R37
+l0
+L5
+ViCg^_7oSnz@=dhbiYjWUn2
+!s100 6iNFN_0b<ZTN^:9z4aFXR1
+R6
+31
+R16
+!i10b 1
+R22
+R38
+R39
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 4 seg7 0 22 iCg^_7oSnz@=dhbiYjWUn2
+l22
+L12
+V[_e5]d=_@AH<ecZTF?g]51
+!s100 ^ERX>m3k:3a0BJA_lhd@E1
+R6
+31
+R16
+!i10b 1
+R22
+R38
+R39
+!i113 1
+R11
+R12
+Etestbench
+R13
+R33
+Z40 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+R2
+R3
+R0
+Z41 8C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht
+Z42 FC:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht
+l0
+L5
+V4HEm;e8eeXzGO9Ii`>i221
+!s100 D7:<`0Q6OimFfE2eLR4UN3
+R6
+32
+R16
+!i10b 1
+R22
+Z43 !s90 -reportprogress|300|C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht|
+Z44 !s107 C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht|
+!i113 1
+R12
+Abehavior
+R33
+R40
+R2
+R3
+DEx4 work 9 testbench 0 22 4HEm;e8eeXzGO9Ii`>i221
+l22
+L8
+V:WQ_8M@:nM_==GM]@oEUE3
+!s100 1bRhCgK:`bR[jRaV<B8k83
+R6
+32
+R16
+!i10b 1
+R22
+R43
+R44
+!i113 1
+R12

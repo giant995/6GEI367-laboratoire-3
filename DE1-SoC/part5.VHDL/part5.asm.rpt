@@ -1,5 +1,5 @@
 Assembler report for part5
-Sat Apr 04 19:21:54 2020
+Sun Apr 05 13:12:29 2020
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Apr 04 19:21:54 2020 ;
+; Assembler Status      ; Successful - Sun Apr 05 13:12:29 2020 ;
 ; Revision Name         ; part5                                 ;
 ; Top-level Entity Name ; part5                                 ;
 ; Family                ; Cyclone V                             ;
@@ -79,7 +79,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sat Apr 04 19:21:43 2020
+    Info: Processing started: Sun Apr 05 13:12:19 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off part5 -c part5
 Warning (125092): Tcl Script File inst_mem.qip not found
     Info (125063): set_global_assignment -name QIP_FILE inst_mem.qip
@@ -87,8 +87,8 @@ Warning (18236): Number of processors has not been specified which may cause ove
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Sat Apr 04 19:21:54 2020
-    Info: Elapsed time: 00:00:11
+    Info: Processing ended: Sun Apr 05 13:12:29 2020
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:08
 
 

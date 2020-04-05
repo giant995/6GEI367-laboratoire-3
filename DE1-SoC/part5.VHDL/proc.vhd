@@ -58,6 +58,7 @@ ARCHITECTURE Behavior OF proc IS
     SIGNAL Sel : STD_LOGIC_VECTOR(3 DOWNTO 0); -- bus selector
     SIGNAL Rin : STD_LOGIC_VECTOR(0 TO 7);
     SIGNAL Sum : STD_LOGIC_VECTOR(15 DOWNTO 0);
+	 --SIGNAL SumCarry : STD_LOGIC_VECTOR(16 DOWNTO 0);--SUM POUR CARRY CHECK ******************************************************
     SIGNAL IRin, Done, ADDRin, DOUTin, IMM, Ain, Gin, AddSub, ALUand : STD_LOGIC;
     SIGNAL III, rX, rY : STD_LOGIC_VECTOR(2 DOWNTO 0);
     SIGNAL Xreg : STD_LOGIC_VECTOR(0 TO 7);
@@ -127,6 +128,51 @@ BEGIN
                 IRin <= '1';
             WHEN T3 => -- define signals in time step T1
                 CASE III IS
+							WHEN branch =>
+								IF rX = "000" THEN --Always branch
+									--Load Label into program counter
+									Sel <= Sel_D;
+									--pc_inc <= '1';
+									Rin <= "00000001";
+									Done <= '1';
+								END IF;
+								
+								IF rX = "001" THEN --branch if eq (z=1)
+									IF z = '1' THEN
+										Sel <= Sel_D;
+										--pc_inc <= '1';
+										Rin <= "00000001";
+										Done <= '1';
+									END IF;
+								END IF;
+								
+								IF rX = "010" THEN --branch if not eq (z=0)
+									IF z = '0' THEN
+										Sel <= Sel_D;
+										--pc_inc <= '1';
+										Rin <= "00000001";
+										Done <= '1';
+									END IF;
+								END IF;
+								
+								IF rX = "011" THEN --branch if carry clear (c=0)
+									IF c = '0' THEN
+										Sel <= Sel_D;
+										--pc_inc <= '1';
+										Rin <= "00000001";
+										Done <= '1';
+									END IF;
+								END IF;
+								
+								IF rX = "100" THEN --branch if carry set (c=1)
+									IF c = '1' THEN
+										Sel <= Sel_D;
+										--pc_inc <= '1';
+										Rin <= "00000001";
+										Done <= '1';
+									END IF;
+								END IF;
+								
                     WHEN mv =>
                         IF IMM = '0' THEN Sel <= '0' & rY;  -- mv rX, rY
                         ELSE Sel <= Sel_D;                  -- mv rX, #D
@@ -245,22 +291,35 @@ BEGIN
     reg_W: flipflop PORT MAP (W_D, Resetn, Clock, W);
     
     alu: PROCESS (AddSub, A, BusWires, ALUand)
+	 VARIABLE SumCarry : STD_LOGIC_VECTOR(16 DOWNTO 0);
     BEGIN
         IF ALUand = '0' THEN
             IF AddSub = '0' THEN
-                Sum <= A + BusWires;
+                SumCarry := '0' & A + BusWires;
+					 IF SumCarry(16) = '1' THEN --FLAG c=1 SI CARRY, ELSE C=0 **************************************************************
+						c<='1';
+					ELSE
+						c<='0';
+					END IF;
+					 
             ELSE
-                Sum <= A - BusWires;
+                SumCarry := '0' & A - BusWires;
+					 IF SumCarry = "00000000000000000" THEN --FLAG Z=1 SI ALU RETOURNE 0, ELSE Z=0 **************************************************************
+						z<='1';
+					ELSE
+						z<='0';
+					END IF;
             END IF;
+				
+				  
+				Sum <= SumCarry(15 DOWNTO 0);
         ELSE
             Sum <= A AND BusWires;
         END IF;
 		  
-		  IF Sum = "0000000000000000" THEN --FLAG Z=1 SI ALU RETOURNE 0, ELSE Z=0 **************************************************************
-				z<='1';
-			ELSE
-				z<='0';
-		  END IF;
+		  
+		  
+		  
     END PROCESS;
 
     reg_G: regn PORT MAP (Sum, Gin, Clock, G);

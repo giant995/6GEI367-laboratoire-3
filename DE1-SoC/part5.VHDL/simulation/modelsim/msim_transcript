@@ -1,0 +1,947 @@
+# Reading D:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do part5_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/part5.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:41 on Apr 05,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/part5.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part5
+# -- Compiling architecture Behavior of part5
+# End time: 15:16:41 on Apr 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/proc.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:41 on Apr 05,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/proc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity proc
+# -- Compiling architecture Behavior of proc
+# -- Compiling entity pc_count
+# -- Compiling architecture Behavior of pc_count
+# -- Compiling entity dec3to8
+# -- Compiling architecture Behavior of dec3to8
+# -- Compiling entity regn
+# -- Compiling architecture Behavior of regn
+# End time: 15:16:41 on Apr 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/flipflop.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:41 on Apr 05,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/flipflop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflop
+# -- Compiling architecture Behavior of flipflop
+# End time: 15:16:42 on Apr 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/inst_mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:42 on Apr 05,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/inst_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity inst_mem
+# -- Compiling architecture SYN of inst_mem
+# End time: 15:16:42 on Apr 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/seg7.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:42 on Apr 05,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/seg7.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seg7
+# -- Compiling architecture Behavior of seg7
+# -- Compiling entity regne
+# -- Compiling architecture Behavior of regne
+# End time: 15:16:42 on Apr 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# do "C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part5.VHDL/ModelSim/testbench.tcl"
+# stop any simulation that is currently running
+# quit -sim
+# 
+# if simulating with a MIF file, copy it to the working folder. Assumes inst_mem.mif
+# if {[file exists ../inst_mem.mif]} {
+# 	file delete inst_mem.mif
+# 	file copy ../inst_mem.mif .
+# }
+# in case Quartus generated an "empty black box" file for the memory, delete it
+# if {[file exists ../inst_mem_bb.vhd]} {
+# 	file delete ../inst_mem_bb.vhd
+# }
+# 
+# 
+# create the default "work" library
+# vlib work;
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# compile the VHDL source code in the parent folder
+# vcom {C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:42 on Apr 05,2020
+# vcom -reportprogress 300 C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity part3
+# -- Compiling architecture Behavior of part3
+# End time: 15:16:42 on Apr 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# compile the VHDL code of the testbench
+# vcom {C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:42 on Apr 05,2020
+# vcom -reportprogress 300 C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity testbench
+# -- Compiling architecture Behavior of testbench
+# End time: 15:16:42 on Apr 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# start the Simulator, including some libraries that may be needed
+# vsim work.testbench -Lf 220model -Lf altera_mf
+# vsim work.testbench -Lf 220model -Lf altera_mf 
+# Start time: 15:16:42 on Apr 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.testbench(behavior)
+# Loading work.part3(behavior)
+# Loading work.flipflop(behavior)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.proc(behavior)
+# Loading work.dec3to8(behavior)
+# Loading work.regn(behavior)
+# Loading work.pc_count(behavior)
+# Loading altera_mf.altera_mf_components
+# Loading work.inst_mem(syn)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# show waveforms specified in wave.do
+# do wave.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -label Clock /testbench/CLOCK_50
+# add wave -noupdate -label KEY /testbench/KEY
+# add wave -noupdate -label SW /testbench/SW
+# add wave -noupdate -divider proc
+# add wave -noupdate -label Resetn /testbench/U1/U3/Resetn
+# add wave -noupdate -label Run /testbench/U1/U3/Run
+# add wave -noupdate -label Clock /testbench/U1/U3/Clock
+# add wave -noupdate -label IR -radix hexadecimal /testbench/U1/U3/IR
+# add wave -noupdate -label W /testbench/U1/U3/W
+# add wave -noupdate -label Done /testbench/U1/U3/Done
+# add wave -noupdate -label PC -radix hexadecimal /testbench/U1/U3/PC
+# add wave -noupdate -label ADDR -radix hexadecimal /testbench/U1/U3/ADDR
+# add wave -noupdate -label inst_mem -radix hexadecimal /testbench/U1/inst_mem_q
+# add wave -noupdate -label DIN -radix hexadecimal /testbench/U1/U3/DIN
+# add wave -noupdate -label DOUT -radix hexadecimal -childformat {{/testbench/U1/U3/DOUT(15) -radix hexadecimal} {/testbench/U1/U3/DOUT(14) -radix hexadecimal} {/testbench/U1/U3/DOUT(13) -radix hexadecimal} {/testbench/U1/U3/DOUT(12) -radix hexadecimal} {/testbench/U1/U3/DOUT(11) -radix hexadecimal} {/testbench/U1/U3/DOUT(10) -radix hexadecimal} {/testbench/U1/U3/DOUT(9) -radix hexadecimal} {/testbench/U1/U3/DOUT(8) -radix hexadecimal} {/testbench/U1/U3/DOUT(7) -radix hexadecimal} {/testbench/U1/U3/DOUT(6) -radix hexadecimal} {/testbench/U1/U3/DOUT(5) -radix hexadecimal} {/testbench/U1/U3/DOUT(4) -radix hexadecimal} {/testbench/U1/U3/DOUT(3) -radix hexadecimal} {/testbench/U1/U3/DOUT(2) -radix hexadecimal} {/testbench/U1/U3/DOUT(1) -radix hexadecimal} {/testbench/U1/U3/DOUT(0) -radix hexadecimal}} -subitemconfig {/testbench/U1/U3/DOUT(15) {-radix hexadecimal} /testbench/U1/U3/DOUT(14) {-radix hexadecimal} /testbench/U1/U3/DOUT(13) {-radix hexadecimal} /testbench/U1/U3/DOUT(12) {-radix hexadecimal} /testbench/U1/U3/DOUT(11) {-radix hexadecimal} /testbench/U1/U3/DOUT(10) {-radix hexadecimal} /testbench/U1/U3/DOUT(9) {-radix hexadecimal} /testbench/U1/U3/DOUT(8) {-radix hexadecimal} /testbench/U1/U3/DOUT(7) {-radix hexadecimal} /testbench/U1/U3/DOUT(6) {-radix hexadecimal} /testbench/U1/U3/DOUT(5) {-radix hexadecimal} /testbench/U1/U3/DOUT(4) {-radix hexadecimal} /testbench/U1/U3/DOUT(3) {-radix hexadecimal} /testbench/U1/U3/DOUT(2) {-radix hexadecimal} /testbench/U1/U3/DOUT(1) {-radix hexadecimal} /testbench/U1/U3/DOUT(0) {-radix hexadecimal}} /testbench/U1/U3/DOUT
+# add wave -noupdate -label FSM /testbench/U1/U3/Tstep_Q
+# add wave -noupdate -label R0 -radix hexadecimal /testbench/U1/U3/R0
+# add wave -noupdate -label R1 -radix hexadecimal /testbench/U1/U3/R1
+# add wave -noupdate -label R2 -radix hexadecimal /testbench/U1/U3/R2
+# add wave -noupdate -label R3 -radix hexadecimal /testbench/U1/U3/R3
+# add wave -noupdate -label R4 -radix hexadecimal /testbench/U1/U3/R4
+# add wave -noupdate -label Buswires -radix hexadecimal /testbench/U1/U3/BusWires
+# add wave -noupdate -label Sel /testbench/U1/U3/Sel
+# add wave -noupdate -label z /testbench/U1/U3/z
+# add wave -noupdate -label c /testbench/U1/U3/c
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {504646 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 89
+# configure wave -valuecolwidth 64
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {535353 ps} {808223 ps}
+# advance the simulation the desired amount of time
+# run 28250 ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 2  Instance: /testbench/U1/U4/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 110 ns  Iteration: 5  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 130 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 190 ns  Iteration: 5  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 510 ns  Iteration: 5  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1110 ns  Iteration: 5  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26310 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26390 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26470 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26550 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26630 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26710 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26790 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26870 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26950 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27030 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27110 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27190 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27270 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27350 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27430 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27510 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27590 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27670 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27750 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27830 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27910 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27990 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 28070 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 28150 ns  Iteration: 4  Instance: /testbench/U1/U3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 28230 ns  Iteration: 4  Instance: /testbench/U1/U3
+# End time: 15:32:36 on Apr 05,2020, Elapsed time: 0:15:54
+# Errors: 0, Warnings: 375
