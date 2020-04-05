@@ -304,7 +304,7 @@ BEGIN
 					 
             ELSE
                 SumCarry := '0' & A - BusWires;
-					 IF SumCarry = "00000000000000000" THEN --FLAG Z=1 SI ALU RETOURNE 0, ELSE Z=0 **************************************************************
+					 IF SumCarry(15 DOWNTO 0) = 0 THEN --FLAG Z=1 SI ALU RETOURNE 0, ELSE Z=0 **************************************************************
 						z<='1';
 					ELSE
 						z<='0';
