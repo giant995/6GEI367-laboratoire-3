@@ -296,22 +296,22 @@ BEGIN
     BEGIN
         IF ALUand = '0' THEN
             IF AddSub = '0' THEN
-                SumCarry := '0' & A + BusWires;
-					 IF SumCarry(16) = '1' THEN --FLAG c=1 SI CARRY, ELSE C=0 **************************************************************
+                SumCarry := '0' & A + BusWires; 
+            ELSE
+                SumCarry := '0' & A - BusWires;
+            END IF;
+				
+					IF SumCarry(16) = '1' THEN --FLAG c=1 SI CARRY, ELSE C=0 **************************************************************
 						flag_c<='1';
 					ELSE
 						flag_c<='0';
 					END IF;
-					 
-            ELSE
-                SumCarry := '0' & A - BusWires;
-					 IF SumCarry(15 DOWNTO 0) = 0 THEN --FLAG Z=1 SI ALU RETOURNE 0, ELSE Z=0 **************************************************************
+					
+					IF SumCarry(15 DOWNTO 0) = 0 THEN --FLAG Z=1 SI ALU RETOURNE 0, ELSE Z=0 **************************************************************
 						flag_z<='1';
 					ELSE
 						flag_z<='0';
 					END IF;
-            END IF;
-				
 				  
 				Sum <= SumCarry(15 DOWNTO 0);
         ELSE

@@ -21,9 +21,9 @@ V<Q[5XC;J]1`iN93VEO7KV3
 !s100 c^Ii6XlfdFFM>JKlAcQ@`2
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1586184939
+Z7 !s110 1586209956
 !i10b 1
-Z8 !s108 1586184939.000000
+Z8 !s108 1586209956.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd|
 Z10 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd|
 !i113 1
@@ -100,11 +100,11 @@ VIPL:4R96=Pn5mNa[gz?lk0
 !s100 dm80m;lJELzBSmn:HQ6Nz1
 R6
 31
-Z21 !s110 1586184940
+R7
 !i10b 1
 R8
-Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd|
-Z23 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd|
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd|
+Z22 !s107 C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd|
 !i113 1
 R11
 R12
@@ -119,11 +119,11 @@ VfTU_oRNcHO^;Wn6T[80g^1
 !s100 aHO1Tli7]@;CK=BECUf^^0
 R6
 31
-R21
+R7
 !i10b 1
 R8
+R21
 R22
-R23
 !i113 1
 R11
 R12
@@ -132,19 +132,19 @@ R13
 R2
 R3
 R0
-Z24 8C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd
-Z25 FC:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd
+Z23 8C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd
+Z24 FC:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd
 l0
 L6
 Vlh4>h@GIEZ7ZgCLmD0L`92
 !s100 m_UG]^]Ik^7AFE5d:Yn]H1
 R6
 32
-R21
+R7
 !i10b 1
-Z26 !s108 1586184940.000000
-Z27 !s90 -reportprogress|300|C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd|
-Z28 !s107 C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd|
+R8
+Z25 !s90 -reportprogress|300|C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd|
+Z26 !s107 C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd|
 !i113 1
 R12
 Abehavior
@@ -157,17 +157,17 @@ VJLN^<0ICzkQ:YnTNmjMG`3
 !s100 oPPJlE8kQC?BR>30ac47n1
 R6
 32
-R21
+R7
 !i10b 1
+R8
+R25
 R26
-R27
-R28
 !i113 1
 R12
 Epc_count
 R1
-Z29 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z30 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z27 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z28 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R2
 R3
 R0
@@ -188,8 +188,8 @@ R10
 R11
 R12
 Abehavior
-R29
-R30
+R27
+R28
 R2
 R3
 DEx4 work 8 pc_count 0 22 =eL9e[Jc]J8B4X`<_1d9=1
@@ -209,8 +209,8 @@ R11
 R12
 Eproc
 R1
-R29
-R30
+R27
+R28
 R2
 R3
 R0
@@ -231,8 +231,8 @@ R10
 R11
 R12
 Abehavior
-R29
-R30
+R27
+R28
 R2
 R3
 DEx4 work 4 proc 0 22 eSo9`Cz3QfWCQUH^IH4oX0
@@ -291,29 +291,29 @@ R11
 R12
 Etestbench
 R13
-R29
-Z31 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+R27
+Z29 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 R2
 R3
 R0
-Z32 8C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht
-Z33 FC:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht
+Z30 8C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht
+Z31 FC:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht
 l0
 L5
 V4HEm;e8eeXzGO9Ii`>i221
 !s100 D7:<`0Q6OimFfE2eLR4UN3
 R6
 32
-R21
+R7
 !i10b 1
-R26
-Z34 !s90 -reportprogress|300|C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht|
-Z35 !s107 C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht|
+R8
+Z32 !s90 -reportprogress|300|C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht|
+Z33 !s107 C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht|
 !i113 1
 R12
 Abehavior
+R27
 R29
-R31
 R2
 R3
 DEx4 work 9 testbench 0 22 4HEm;e8eeXzGO9Ii`>i221
@@ -323,10 +323,10 @@ V:WQ_8M@:nM_==GM]@oEUE3
 !s100 1bRhCgK:`bR[jRaV<B8k83
 R6
 32
-R21
+R7
 !i10b 1
-R26
-R34
-R35
+R8
+R32
+R33
 !i113 1
 R12
