@@ -12,18 +12,18 @@
 # 
 # vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:30:34 on Apr 04,2020
+# Start time: 10:55:39 on Apr 06,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/part3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity part3
 # -- Compiling architecture Behavior of part3
-# End time: 18:30:34 on Apr 04,2020, Elapsed time: 0:00:00
+# End time: 10:55:39 on Apr 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:30:34 on Apr 04,2020
+# Start time: 10:55:39 on Apr 06,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/proc.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -38,22 +38,22 @@
 # -- Compiling architecture Behavior of dec3to8
 # -- Compiling entity regn
 # -- Compiling architecture Behavior of regn
-# End time: 18:30:34 on Apr 04,2020, Elapsed time: 0:00:00
+# End time: 10:55:39 on Apr 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:30:34 on Apr 04,2020
+# Start time: 10:55:39 on Apr 06,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/flipflop.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity flipflop
 # -- Compiling architecture Behavior of flipflop
-# End time: 18:30:35 on Apr 04,2020, Elapsed time: 0:00:01
+# End time: 10:55:39 on Apr 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:30:35 on Apr 04,2020
+# Start time: 10:55:39 on Apr 06,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/inst_mem.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -61,7 +61,7 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity inst_mem
 # -- Compiling architecture SYN of inst_mem
-# End time: 18:30:35 on Apr 04,2020, Elapsed time: 0:00:00
+# End time: 10:55:40 on Apr 06,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # do "C:/Users/The_N/Documents/GitHub/6GEI367-laboratoire-3/DE1-SoC/part3.VHDL/ModelSim/testbench.tcl"
@@ -84,22 +84,22 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # compile the VHDL source code in the parent folder
-# vcom {C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\part3.vhd}
+# vcom {C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:30:35 on Apr 04,2020
-# vcom -reportprogress 300 C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\part3.vhd 
+# Start time: 10:55:40 on Apr 06,2020
+# vcom -reportprogress 300 C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\part3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity part3
 # -- Compiling architecture Behavior of part3
-# End time: 18:30:35 on Apr 04,2020, Elapsed time: 0:00:00
+# End time: 10:55:40 on Apr 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # compile the VHDL code of the testbench
-# vcom {C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht}
+# vcom {C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:30:35 on Apr 04,2020
-# vcom -reportprogress 300 C:\Users\The_N\Documents\UQAC\2020\Conception Systemes Digitaux\labo3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht 
+# Start time: 10:55:40 on Apr 06,2020
+# vcom -reportprogress 300 C:\Users\The_N\Documents\GitHub\6GEI367-laboratoire-3\DE1-SoC\part3.VHDL\ModelSim\testbench.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -107,12 +107,12 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity testbench
 # -- Compiling architecture Behavior of testbench
-# End time: 18:30:35 on Apr 04,2020, Elapsed time: 0:00:00
+# End time: 10:55:40 on Apr 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # start the Simulator, including some libraries that may be needed
 # vsim work.testbench -Lf 220model -Lf altera_mf
 # vsim work.testbench -Lf 220model -Lf altera_mf 
-# Start time: 18:30:35 on Apr 04,2020
+# Start time: 10:55:40 on Apr 06,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -421,5 +421,5 @@
 #    Time: 1790 ns  Iteration: 4  Instance: /testbench/U1/U3
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 1790 ns  Iteration: 5  Instance: /testbench/U1/U3
-# End time: 18:31:04 on Apr 04,2020, Elapsed time: 0:00:29
+# End time: 10:56:07 on Apr 06,2020, Elapsed time: 0:00:27
 # Errors: 0, Warnings: 125

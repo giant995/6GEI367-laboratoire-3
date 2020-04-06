@@ -138,6 +138,8 @@ Clock => regn:reg_DOUT.Clock
 Clock => regn:reg_IR.Clock
 Clock => flipflop:reg_W.Clock
 Clock => regn:reg_G.Clock
+Clock => regn1bit:reg_C.Clock
+Clock => regn1bit:reg_Z.Clock
 Clock => Tstep_Q~1.DATAIN
 Run => Tstep_D.T1.DATAB
 Run => pc_inc.DATAB
@@ -1120,6 +1122,20 @@ Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|proc:U3|regn1bit:reg_C
+R => Q~reg0.DATAIN
+Rin => Q~reg0.ENA
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|proc:U3|regn1bit:reg_Z
+R => Q~reg0.DATAIN
+Rin => Q~reg0.ENA
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |part5|inst_mem:U4

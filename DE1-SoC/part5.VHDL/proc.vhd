@@ -27,6 +27,12 @@ ARCHITECTURE Behavior OF proc IS
                Rin, Clock  : IN STD_LOGIC;
                Q           : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
     END COMPONENT;
+	 COMPONENT regn1bit
+        --GENERIC ( n : INTEGER := 16);
+        PORT ( R           : IN STD_LOGIC;
+               Rin, Clock  : IN STD_LOGIC;
+               Q           : OUT STD_LOGIC);
+    END COMPONENT;
     COMPONENT flipflop 
         PORT (  D, Resetn, Clock  : IN  STD_LOGIC;
                 Q                 : OUT STD_LOGIC);
@@ -58,14 +64,14 @@ ARCHITECTURE Behavior OF proc IS
     SIGNAL Sel : STD_LOGIC_VECTOR(3 DOWNTO 0); -- bus selector
     SIGNAL Rin : STD_LOGIC_VECTOR(0 TO 7);
     SIGNAL Sum : STD_LOGIC_VECTOR(15 DOWNTO 0);
-	 --SIGNAL SumCarry : STD_LOGIC_VECTOR(16 DOWNTO 0);--SUM POUR CARRY CHECK ******************************************************
     SIGNAL IRin, Done, ADDRin, DOUTin, IMM, Ain, Gin, AddSub, ALUand : STD_LOGIC;
     SIGNAL III, rX, rY : STD_LOGIC_VECTOR(2 DOWNTO 0);
     SIGNAL Xreg : STD_LOGIC_VECTOR(0 TO 7);
     SIGNAL R0, R1, R2, R3, R4, R5, R6, PC, A, G : STD_LOGIC_VECTOR(15 DOWNTO 0);
+	 SIGNAL z,c : STD_LOGIC;
     SIGNAL IR, BusWires : STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL pc_inc, W_D : STD_LOGIC;
-	 SIGNAL z, c : STD_LOGIC; -- FLAGS POUR BRANCH ****************************************************************************
+	 SIGNAL flag_z, flag_c : STD_LOGIC; -- FLAGS POUR BRANCH ****************************************************************************
 BEGIN
     III <= IR(15 DOWNTO 13);
     IMM <= IR(12);
@@ -132,7 +138,6 @@ BEGIN
 								IF rX = "000" THEN --Always branch
 									--Load Label into program counter
 									Sel <= Sel_D;
-									--pc_inc <= '1';
 									Rin <= "00000001";
 									Done <= '1';
 								END IF;
@@ -140,7 +145,6 @@ BEGIN
 								IF rX = "001" THEN --branch if eq (z=1)
 									IF z = '1' THEN
 										Sel <= Sel_D;
-										--pc_inc <= '1';
 										Rin <= "00000001";
 										Done <= '1';
 									END IF;
@@ -149,7 +153,6 @@ BEGIN
 								IF rX = "010" THEN --branch if not eq (z=0)
 									IF z = '0' THEN
 										Sel <= Sel_D;
-										--pc_inc <= '1';
 										Rin <= "00000001";
 										Done <= '1';
 									END IF;
@@ -158,7 +161,6 @@ BEGIN
 								IF rX = "011" THEN --branch if carry clear (c=0)
 									IF c = '0' THEN
 										Sel <= Sel_D;
-										--pc_inc <= '1';
 										Rin <= "00000001";
 										Done <= '1';
 									END IF;
@@ -167,7 +169,6 @@ BEGIN
 								IF rX = "100" THEN --branch if carry set (c=1)
 									IF c = '1' THEN
 										Sel <= Sel_D;
-										--pc_inc <= '1';
 										Rin <= "00000001";
 										Done <= '1';
 									END IF;
@@ -297,17 +298,17 @@ BEGIN
             IF AddSub = '0' THEN
                 SumCarry := '0' & A + BusWires;
 					 IF SumCarry(16) = '1' THEN --FLAG c=1 SI CARRY, ELSE C=0 **************************************************************
-						c<='1';
+						flag_c<='1';
 					ELSE
-						c<='0';
+						flag_c<='0';
 					END IF;
 					 
             ELSE
                 SumCarry := '0' & A - BusWires;
 					 IF SumCarry(15 DOWNTO 0) = 0 THEN --FLAG Z=1 SI ALU RETOURNE 0, ELSE Z=0 **************************************************************
-						z<='1';
+						flag_z<='1';
 					ELSE
-						z<='0';
+						flag_z<='0';
 					END IF;
             END IF;
 				
@@ -323,6 +324,9 @@ BEGIN
     END PROCESS;
 
     reg_G: regn PORT MAP (Sum, Gin, Clock, G);
+	 
+	 reg_C: regn1bit PORT MAP (flag_c, Gin, Clock, c);
+	 reg_Z: regn1bit PORT MAP (flag_z, Gin, Clock, z);
 
     busmux: PROCESS (Sel, R0, R1, R2, R3, R4, R5, R6, PC, G, IR, DIN)
     BEGIN
@@ -408,7 +412,29 @@ ENTITY regn IS
            Q           : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
 END regn;
 
+
 ARCHITECTURE Behavior OF regn IS
+BEGIN
+    PROCESS (Clock)
+    BEGIN
+        IF Clock'EVENT AND Clock = '1' THEN
+            IF Rin = '1' THEN
+                Q <= R;
+            END IF;
+        END IF;
+    END PROCESS;
+END Behavior;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY regn1bit IS
+    PORT ( R           : IN  STD_LOGIC;
+           Rin, Clock  : IN  STD_LOGIC;
+           Q           : OUT STD_LOGIC);
+END regn1bit;
+
+ARCHITECTURE Behavior OF regn1bit IS
 BEGIN
     PROCESS (Clock)
     BEGIN
